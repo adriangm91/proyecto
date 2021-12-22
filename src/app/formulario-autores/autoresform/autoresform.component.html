@@ -1,0 +1,17 @@
+<input type="text" placeholder="Nombre autor" [(ngModel)]="autorIngresado.nombre" >
+<br><br>
+<input type="text" placeholder="Apellido" [(ngModel)]="autorIngresado.apellido" >
+<br><br>
+<input type="text" placeholder="Identificación" [(ngModel)]="autorIngresado.cedula">
+<br><br>
+<input type="date" placeholder="Fecha de nacimiento" [(ngModel)]="autorIngresado.fechaNacimiento">
+<br><br>
+<select [(ngModel)]="autorIngresado.generoLiterario">
+    <option *ngFor="let genero of selectorGeneroLiterario; let i = index" [value]="genero"> {{genero}} </option>
+</select>
+<br><br>
+<div>
+<button type="button" (click)=onSubmit()>Registrar</button>
+<button type="button" (click)=registrarLibros()>Registrar Libros</button>
+<button type="button" (click)=verTablas()>Ver tablas</button>
+</div>

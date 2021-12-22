@@ -1,0 +1,12 @@
+app-form-books {
+    display: block;
+}
+app-form {
+    display: block;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+
+}
